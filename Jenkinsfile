@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_HUB_CREDENTIALS = 'docker-hub'
         EC2_SSH_CREDENTIALS = 'ec2-ssh'
-        DOCKER_IMAGE = 'sushantmishra2002/blog-app:latest'
+        DOCKER_IMAGE = 'sushantmishra2002/devops-project:latest'
         EC2_HOST = '13.62.49.93'
         EC2_USER = 'ec2-user'
     }
