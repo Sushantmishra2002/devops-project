@@ -4,15 +4,15 @@ pipeline {
     environment {
         DOCKER_HUB_CREDENTIALS = 'docker-hub'
         EC2_SSH_CREDENTIALS = 'ec2-ssh'
-        DOCKER_IMAGE = 'your-dockerhub-username/blog-app:latest'
-        EC2_HOST = 'your-ec2-public-ip'
+        DOCKER_IMAGE = 'sushantmishra2002/blog-app:latest'
+        EC2_HOST = '13.62.49.93'
         EC2_USER = 'ec2-user'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/<YOUR-USERNAME>/blog-app.git'
+                git branch: 'main', url: 'https://github.com/Sushantmishra2002/devops-project.git'
             }
         }
 
